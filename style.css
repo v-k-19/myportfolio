@@ -1,7 +1,6 @@
 :root {
   --text-color: #E0E0E0;
   --primary-color: #00ADB5;
-  --page-bg: #121212;
   --sidebar-bg: hsl(240, 2%, 13%);
   --main-bg:hsl(240, 2%, 13%);
   --accent: #00ADB5;
@@ -15,7 +14,8 @@
 }
 
 body {
-  background-color: var(--page-bg);
+  background: url("assets/bg/13.jpg") no-repeat center center fixed;
+  background-size: cover;
   color: var(--text-color);
   font-family: var(--font);
   display: flex;
