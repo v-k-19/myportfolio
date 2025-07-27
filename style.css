@@ -14,7 +14,7 @@
 }
 
 body {
-  background: url("assets/bg/14,jpg") no-repeat center center fixed;
+  background: url("assets/bg/14.jpg") no-repeat center center fixed;
   background-size: cover;
   color: var(--text-color);
   font-family: var(--font);
