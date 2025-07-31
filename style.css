@@ -300,7 +300,7 @@ body {
   margin-top: 400px;
   padding-top:600px;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   gap: 0.8rem;
   flex-wrap: wrap;
 }
@@ -311,7 +311,7 @@ body {
   padding: 10px;
   display: inline-flex;
   align-items: right;
-  justify-content: center;
+  justify-content: right;
   width: 40px;
   height: 40px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -335,16 +335,9 @@ body {
   background-color: #333;
 }
 
-.icon.instagram:hover {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-}
-
-.icon.youtube:hover {
-  background-color: #ff0000;
-}
 .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   gap: 0.8rem;
   margin-top: 23rem;
   padding-bottom: 1rem;
