@@ -729,3 +729,59 @@ a:hover {
   color: #777;
 }
 
+/* New CSS for mobile toggle button and sidebar */
+.mobile-only {
+  display: none; /* Hide button by default */
+}
+
+/* Styles for screens smaller than 1024px (your existing responsive breakpoint) */
+@media (max-width: 1024px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  /* Display the button only on mobile */
+  .mobile-only {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .mobile-only img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* Rotate the arrow when the sidebar is open */
+  .mobile-only.active img {
+    transform: rotate(180deg);
+  }
+
+  /* Initially hide the sidebar content on mobile */
+  #sidebar-content {
+    display: none;
+  }
+
+  /* Reveal the content when the button is active */
+  #sidebar-content.visible {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Reset the position of social icons on mobile */
+  .social-icons {
+    margin-top: 0;
+    padding-top: 1rem;
+    padding-left: 0;
+  }
+}
