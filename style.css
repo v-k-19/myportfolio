@@ -778,7 +778,7 @@ button {
   content: "";
   width: .75rem;
   height: .125rem;
-  background-color:#15141b;
+  background-color: rgb(245, 245, 247);
   position: absolute;
   bottom: 0;
   transition: transform 1s cubic-bezier(.86, 0, .07, 1),
