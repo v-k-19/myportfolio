@@ -13,15 +13,3 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  const toggleButton = document.getElementById('toggle-button');
-  const content = document.getElementById('content');
-
-  toggleButton.addEventListener('click', function() {
-    // Toggle the 'visible' class on the content
-    content.classList.toggle('visible');
-
-    // Toggle the 'arrow-up' class on the button
-    toggleButton.classList.toggle('arrow-up');
-  });
-});
