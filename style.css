@@ -1,9 +1,9 @@
 :root {
   --text-color: #E0E0E0;
-  --primary-color: #00ADB5;
+  --primary-color: #F8B259;
   --sidebar-bg: #15141b;
   --main-bg:#15141b;
-  --accent: #00ADB5;
+  --accent: #F8B259;
   --font: 'Segoe UI', sans-serif;
 }
 
@@ -33,7 +33,7 @@ body {
 
 /* Sidebar */
 .sidebar {
-  margin-left: 100px; 
+  margin-left: 100px;
   margin-top: 25px;
   background-color: var(--sidebar-bg);
   padding: 1rem 1.5rem;
@@ -43,6 +43,12 @@ body {
   flex-direction: column;
   align-items: center;
   height: 800px;
+  position: relative;
+}
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .avatar {
@@ -108,58 +114,6 @@ body {
 }
 
 
-/* Navigation Buttons (Uiverse.io) */
-.nav-inside {
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.btn {
-  width: 120px;
-  height: 45px;
-  background: linear-gradient(to top, #003344, #005666, #007B8A);
-  color: #fff;
-  border-radius: 50px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  font-size: 13px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
-
-.btn span {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: top 0.5s;
-  position: absolute;
-  width: 100%;
-  left: 0;
-}
-
-.btn-text-one {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.btn-text-two {
-  top: 150%;
-  transform: translateY(-50%);
-}
-
-.btn:hover .btn-text-one {
-  top: -100%;
-}
-
-.btn:hover .btn-text-two {
-  top: 50%;
-}
-
 /* Card Section */
 .card-section {
   flex: 1;
@@ -196,18 +150,10 @@ body {
     width: 100%;
   }
 
-  .nav-inside {
-    justify-content: center;
-  }
 }
 @media (max-width: 768px) {
   body {
     font-size: 0.9rem;
-  }
-
-  .btn {
-    width: 100%;
-    height: 50px;
   }
 
   .card-section h1 {
@@ -259,21 +205,6 @@ body {
 .contact-grid textarea {
   resize: none;
 }
-
-.contact-grid button {
-  background-color: #2a2a2a;
-  color: #fff;
-  border: none;
-  border-radius: 12px;
-  padding: 10px;
-  margin-bottom: 0.5rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.contact-grid button:hover {
-  background-color: #444;
-}
 .card-section form {
   margin-top: 2rem;
 }
@@ -284,7 +215,7 @@ body {
 .card-section h3 {
   margin-top: 2rem;
   margin-bottom: 1rem;
-  color: var(--accent);
+  color: #F8B259;
 }
 
 .card-section p,
@@ -296,158 +227,16 @@ body {
 .card-section ul {
   padding-left: 1.2rem;
 }
-.social-icons {
-  margin-top: 400px;
-  padding-top:600px;
-  display: flex;
-  justify-content: right;
-  gap: 0.8rem;
-  flex-wrap: wrap;
-}
-
-.icon {
-  background-color: #fff;
-  border-radius: 0%;
-  padding: 10px;
-  display: inline-flex;
-  align-items: right;
-  justify-content: right;
-  width: 40px;
-  height: 40px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.icon img {
-  width: 30px;
-  height: 30px;
-}
-
-.icon:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.icon.linkedin:hover {
-  background-color: #0a66c2;
-}
-
-.icon.github:hover {
-  background-color: #333;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: right;
-  gap: 0.8rem;
-  margin-top: 14rem;
-  padding-bottom: 1rem;
-  margin-left: 15px;
-}
-.social-icons .icon:hover {
-  transform: scale(1.4);
-}
-.nav-inside .btn {
-  background: linear-gradient(to top, #F8B259, #f1a545, #d88a24); /* New warm gradient */
-  color: #121212; /* Dark text on light background */
-}
-.card-section h1,
-.card-section h2,
-.card-section h3 {
-  color: #F8B259;
-}
-
-/* === Color Styling for Buttons === */
-.btn {
-  background: linear-gradient(to top, #F8B259, #f1a545, #d88a24);
-  color: #121212;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.btn:hover .btn-text-one,
-.btn:hover .btn-text-two {
-  color: #fff;
-}
-
-/* Make all main headings white */
-h1, h2, h3, h4, h5, h6 {
-  color: #ffffff;
-}
-
-/* === Sidebar Role/Subheadings Styling === */
-.sidebar .role {
-  color: #F8B259;
-  font-weight: bold;
-}
-
-/* === Info Labels in Sidebar === */
-.sidebar .info strong {
-  color: #F8B259;
-}
-
-.social-icons {
-  display: flex !important;
-  justify-content: center;
-  gap: 2rem;
-  padding-top: 5rem;
-  padding-bottom: 1rem;
-  padding-left: 110px;
-  flex-wrap: wrap;
-  position: relative;
-}
-
-.social-icons .icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 1px;
-  height: 1px;
-  object-fit: cover; /* ensures it doesn’t stretch or distort */
-  border-radius: 50%; /* keeps it circular like the container */
-  background-color: hsl(240, 2%, 13%);
-  border-radius: 50%;
-  padding: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.social-icons .icon img {
-  width: 50px;
-  height: 50px;
-}
-
-.social-icons .icon:hover {
-  transform: scale(1.2);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.about-summary {
-  margin-top: 2rem;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #ccc;
-}
-
-.about-summary p {
-  margin-bottom: 1rem;
-}
 
 .project-entry h3,
 .project-entry h4 {
-  color: #F8B259;
+  color: var(--accent);
   font-size: 1rem;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
-
-/* Optional: style main page title like resume */
-.main-content h2 {
-  color: #F8B259;
-  font-size: 1.3rem;
-  margin-bottom: 1.5rem;
-}
-
 .project-entry p {
   margin-bottom: 1rem;
   font-size: 0.95rem;
@@ -479,19 +268,13 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-.home-summary h2 {
-  font-size: 1.5rem;
-  color: #F8B259;
-  margin-bottom: 1.5rem;
-}
-
 .summary-block {
   margin-bottom: 2rem;
 }
 
 .summary-block h3 {
   font-size: 1.1rem;
-  color: #F8B259;
+  color: var(--accent);
   margin-bottom: 0.8rem;
 }
 
@@ -523,12 +306,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* === Custom Responsive Improvements & Small Button Update === */
 
-/* Smaller navigation buttons */
-.btn {
-  width: 100px;
-  height: 38px;
-  font-size: 11px;
-}
 
 /* Responsive styles for mobile devices */
 @media (max-width: 768px) {
@@ -555,20 +332,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0;
     padding: 1rem;
   }
-
-  .btn {
-    width: 90px;
-    height: 36px;
-    font-size: 10px;
-  }
-
-  .nav-inside {
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
+  
   .contact-grid {
     max-width: 100%;
     padding: 1rem;
@@ -583,24 +347,12 @@ h1, h2, h3, h4, h5, h6 {
 .avatar:hover {
   background-color: hsl(240, 2%, 13%); /* or any color you prefer */
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(248, 178, 89, 0.5);
+  box-shadow: 0 0 20px #15141b;
 }
 
 @keyframes fadeUpInfo {
   to {
     transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* Social Icons: Add slight animation stagger */
-.sidebar .social-icons {
-  animation: fadeInSocial 1.2s ease forwards;
-  opacity: 0;
-}
-
-@keyframes fadeInSocial {
-  to {
     opacity: 1;
   }
 }
@@ -634,14 +386,14 @@ h1, h2, h3, h4, h5, h6 {
 .info p:hover {
   transform: scale(1.05);
   background-color: rgba(255, 255, 255, 0.08);
-  color: #F8B259;
+  color: var(--accent);
 }
 
 .info strong {
   display: block;
   font-weight: bold;
   margin-bottom: 0rem;
-  color: #F8B259;
+  color: var(--accent);
 }
 
 /* === Move Info Blocks Further Left in Sidebar === */
@@ -689,19 +441,14 @@ a:hover {
 
 /* === Active Navigation Button Highlight === */
 .active-nav {
-  border: 2px solid #F8B259;
-  background-color: #1a1a1a;
-  color: #F8B259;
+  color: #fff;
+  background-color: var(--accent);
+  box-shadow: 0 0 0 5px #15141b;
 }
 
 /* === Smooth Shadow on Main Content === */
 .main-content {
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-}
-
-/* === Button Hover Color Enhancement === */
-.btn:hover {
-  background: linear-gradient(to top, #ffb15a, #f1993a, #cc6f1d);
 }
 
 /* === Better Spacing Between Sections === */
@@ -722,60 +469,87 @@ a:hover {
   color: #777;
 }
 
-/* New CSS for mobile toggle button and sidebar */
-.mobile-only {
-  display: none; /* Hide button by default */
+.social-icons {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 10px;
+}
+.social-icons img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
 }
 
-/* Styles for screens smaller than 1024px (your existing responsive breakpoint) */
-@media (max-width: 1024px) {
-  .sidebar {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  /* Display the button only on mobile */
-  .mobile-only {
-    display: block;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    z-index: 10;
-  }
-
-  .mobile-only img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  /* Rotate the arrow when the sidebar is open */
-  .mobile-only.active img {
-    transform: rotate(180deg);
-  }
-
-  /* Initially hide the sidebar content on mobile */
-  #sidebar-content {
-    display: none;
-  }
-
-  /* Reveal the content when the button is active */
-  #sidebar-content.visible {
-    display: block;
-    animation: fadeIn 0.5s ease-in-out;
-  }
-  
-  /* Reset the position of social icons on mobile */
-  .social-icons {
-    margin-top: 0;
-    padding-top: 1rem;
-    padding-left: 0;
-  }
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+.nav-inside {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 50px; /* Increased gap */
 }
 
+@media (max-width: 768px) {
+  .nav-inside {
+    justify-content: center;
+  }
+}
+.glow-button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+.glow-button:hover,
+.glow-button:focus {
+  color: #ffffff;
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  text-shadow: 0 0 2px #ffffff, 0 0 4px #ffffff, 0 0 8px #ffffff;
+  box-shadow: 0 0 2px var(--primary-color), 0 0 5px var(--primary-color), 0 0 10px var(--primary-color),
+    0 0 20px var(--primary-color);
+}
+.contact-grid {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.contact-grid input,
+.contact-grid textarea {
+  background-color: #111;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 14px;
+  margin-bottom: 1rem;
+  color: #eee;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 0.95rem;
+}
+
+.contact-grid textarea {
+  resize: none;
+}
+.card-section form {
+  margin-top: 2rem;
+}
+.contact-grid {
+  background-color: var(--main-bg);
+}
