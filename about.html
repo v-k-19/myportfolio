@@ -11,16 +11,24 @@
 </head>
 <body>
   <div class="container">
-    <aside class="sidebar">
-       <button id="sidebar-toggle-btn" class="mobile-only">
-    <img src="assets/arrow.svg" alt="Toggle Sidebar" />
-  </button>
-      <img src="assets/avatar.jpg" alt="Avatar" class="avatar" />
-      <h2>Nacham Vamshi Krishna</h2>
-      <p class="role">Cybersecurity | Linux | Developer</p>
-      <div class="info">
-        <p><strong>Email:</strong><br>nachamvamshikrishna@gmail.com</p>
+     <aside class="sidebar">
+      <!-- New sidebar header for clickable area on mobile -->
+      <div class="sidebar-header">
+        <img src="assets/avatar.jpg" alt="Avatar" class="avatar" />
+        <h2>Nacham Vamshi Krishna</h2>
+        <svg class="toggle-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 9L12 15L18 9" stroke="#E0E0E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
       </div>
+
+      <!-- Content to be hidden/shown on mobile -->
+      <div class="sidebar-content">
+        <p class="role">Cybersecurity | Linux | Developer</p>
+        <div class="info">
+          <p><strong>Email:</strong><br>nachamvamshikrishna@gmail.com</p>
+          <p><strong>Phone:</strong><br>+91 9542880519</p>
+          <p><strong>Location:</strong><br>Secunderabad, Hyderabad</p>
+        </div>
       <div class="social-icons">
   <a href="https://www.linkedin.com/in/nacham-vamshi-krishna/" class="icon linkedin" target="_blank" rel="noopener noreferrer">
     <img src="assets/linkedin.svg" alt="LinkedIn">
