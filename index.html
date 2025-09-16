@@ -1,81 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nacham Vamshi Krishna - Portfolio</title>
-  <meta name="description" content="Portfolio of Nacham Vamshi Krishna - Cybersecurity | Linux | Developer">
-  <meta name="keywords" content="Nacham Vamshi Krishna, Cybersecurity, Linux, Web Developer, Projects, Portfolio">
-  <meta name="author" content="Nacham Vamshi Krishna">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <div class="container">
-    <aside class="sidebar">
-      <div class="sidebar-header">
-        <img src="assets/avatar.png" alt="Avatar" class="avatar" />
-        <h2>Nacham Vamshi Krishna</h2>
-        
+<main>
+
+  <!-- Sidebar -->
+  <aside class="sidebar" data-sidebar>
+
+    <div class="sidebar-info">
+      <figure class="avatar-box">
+        <img src="./assets/avatar.png" alt="Nacham Vamshi Krishna" width="80">
+      </figure>
+
+      <div class="info-content">
+        <big><h1 class="name">Nacham Vamshi Krishna</h1></big>
+        <p class="title">Cybersecurity | Linux | Developer</p>
       </div>
 
-      <div class="sidebar-content">
-          <p class="role">Cybersecurity | Linux | Developer</p>
-        <div class="info">
-          <p><strong>Email:</strong><br>nachamvamshikrishna@gmail.com</p>
-          <p><strong>Phone:</strong><br>+91 9542880519</p>
-          <p><strong>Location:</strong><br>Secunderabad, Hyderabad</p>
-        </div>
-      <div class="social-icons">
-  <a href="https://www.linkedin.com/in/nacham-vamshi-krishna/" class="icon linkedin" target="_blank" rel="noopener noreferrer">
-    <img src="assets/linkedin.svg" alt="LinkedIn">
-  </a>
-  <a href="https://github.com/v-k-19" class="icon github" target="_blank" rel="noopener noreferrer">
-    <img src="assets/github.svg" alt="GitHub">
-  </a>
-</div>
-    </aside>
+      <button class="info_more-btn" data-sidebar-btn>
+        <span>Show Contacts</span>
+        <ion-icon name="chevron-down"></ion-icon>
+      </button>
+    </div>
 
-    <header role="banner">
-  
-</header>
-    <main class="main-content">
-      <nav class="nav-inside">
-        <a href="index.html" class="glow-button">Home</a>
-        <a href="about.html" class="glow-button">About</a>
-        <a href="project.html" class="glow-button">Project</a>
-        <a href="resume.html" class="glow-button">Resume</a>
-        <a href="contact.html" class="glow-button">Contact</a>
-      </nav>
+    <div class="sidebar-info_more">
+      <div class="separator"></div>
 
-      <section class="card-section fade-in">
-        <h1>Welcome to My Portfolio</h1>
-        <p>I’m Nacham Vamshi Krishna — a passionate Linux user, developer, and cybersecurity enthusiast. Explore my work and projects!</p>
-          <div class="summary-block">
-    <h3>👨‍💻 About Me</h3>
-    <p>I’m a detail-oriented Computer Science graduate passionate about <strong>Cybersecurity</strong>. My expertise includes ethical hacking, Linux administration, and secure system design.</p>
-  </div>
+      <ul class="contacts-list">
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">Email</p>
+            <a href="mailto:nachamvamshikrishna@gmail.com" class="contact-link">nachamvamshikrishna@gmail.com</a>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">Phone</p>
+            <a href="tel:+919542880519" class="contact-link">+91 95428 80519</a>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">Location</p>
+            <address>Secunderabad, Hyderabad, India</address>
+          </div>
+        </li>
+      </ul>
 
-  <div class="summary-block">
-    <h3>🧠 Skills & Background</h3>
-    <ul>
-      <li>Linux system operations</li>
-      <li>Threat modeling & vulnerability assessment</li>
-      <li>Python scripting & automation</li>
-      <li>Full-stack development</li>
+      <div class="separator"></div>
+
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="https://www.linkedin.com/in/nacham-vamshi-krishna/" class="social-link" target="_blank" rel="noopener">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://github.com/v-k-19" class="social-link" target="_blank" rel="noopener">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+ <div class="main-content">
+
+  <!--
+    - #NAVBAR
+  -->
+  <nav class="navbar">
+    <ul class="navbar-list">
+      <li class="navbar-item">
+        <button class="navbar-link active" data-nav-link>About</button>
+      </li>
+      <li class="navbar-item">
+        <button class="navbar-link" data-nav-link>Resume</button>
+      </li>
+      <li class="navbar-item">
+        <button class="navbar-link" data-nav-link>Portfolio</button>
+      </li>
+      <li class="navbar-item">
+        <button class="navbar-link" data-nav-link>Contact</button>
+      </li>
     </ul>
-  </div>
+  </nav>
 
-  <div class="summary-block">
-    <h3>🚀 Project Highlight</h3>
-    <p><strong>🔹 A.R.I.A – Artificial Intelligence Responsive Assistant:</strong> A modular, offline voice assistant built for Linux. Integrates AI concepts like NLP and automation while protecting user privacy.</p>
-  </div>
+  <!--
+    - #ABOUT
+  -->
+  <article class="about active" data-page="about">
+    <header>
+      <h2 class="h2 article-title">About Me</h2>
+    </header>
+    <section class="about-text">
+      <p>
+        I’m Nacham Vamshi Krishna, a B.E. Computer Science student specializing in
+        Cybersecurity, IoT, and Blockchain. Passionate about Linux development, full-stack programming,
+        open-source contributions, and AI.
+      </p>
+      <p>
+        I have a strong foundation in network security, ethical hacking, and Linux system
+        administration, with hands-on experience identifying vulnerabilities and securing systems.
+      </p>
+    </section>
+  </article>
 
-      </section>
+  <!--
+    - #RESUME
+  -->
+  <article class="resume" data-page="resume">
+    <header>
+      <h2 class="h2 article-title">Resume</h2>
+    </header>
 
-      <footer class="footer">© 2025 Nacham Vamshi Krishna</footer>
-    </main>
-  </div>
+    <section class="timeline">
+      <div class="title-wrapper">
+        <div class="icon-box">
+          <ion-icon name="book-outline"></ion-icon>
+        </div>
+        <h3 class="h3">Education</h3>
+      </div>
+      <ol class="timeline-list">
+        <li class="timeline-item">
+          <h4 class="h4 timeline-item-title">Bachelor of Engineering in Computer Science</h4>
+          <span>2021 — 2025</span>
+          <p class="timeline-text">
+            Cybersecurity, IoT, and Blockchain<br>
+            Nawab Shah Alam Khan College of Engineering and Technology
+          </p>
+        </li>
+      </ol>
+    </section>
 
-  <script src="script.js"></script>
+    <section class="skill">
+      <h3 class="h3 skills-title">My Skills</h3>
+      <ul class="skills-list content-card">
+        <li class="skills-item"><h5 class="h5">Communication Skills</h5></li>
+        <li class="skills-item"><h5 class="h5">Cyber Security</h5></li>
+        <li class="skills-item"><h5 class="h5">Linux</h5></li>
+        <li class="skills-item"><h5 class="h5">Python</h5></li>
+        <li class="skills-item"><h5 class="h5">Git &amp; GitHub</h5></li>
+      </ul>
+    </section>
+  </article>
+
+  <!--
+    - #PORTFOLIO
+  -->
+  <article class="portfolio" data-page="portfolio">
+    <header>
+      <h2 class="h2 article-title">Portfolio</h2>
+    </header>
+    <section class="projects">
+      <ul class="project-list">
+        <li class="project-item active" data-category="web development">
+          <a href="https://github.com/v-k-19/A.R.I.A" target="_blank">
+            <figure class="project-img">
+              <div class="project-item-icon-box">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+              <img src="./assets/images/project-aria.jpg" alt="A.R.I.A" loading="lazy">
+            </figure>
+            <h3 class="project-title">A.R.I.A – Artificial Intelligence Responsive Assistant</h3>
+            <p class="project-category">Linux / AI / Privacy-First Voice Assistant</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </article>
+
+  <!--
+    - #CONTACT
+  -->
+  <article class="contact" data-page="contact">
+    <header>
+      <h2 class="h2 article-title">Contact</h2>
+    </header>
+    <section class="contact-form">
+      <h3 class="h3 form-title">Contact Form</h3>
+      <form action="https://formspree.io/f/mdkdgbzp" method="POST" class="form" data-form>
+        <div class="input-wrapper">
+          <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
+          <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+        </div>
+        <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+        <button class="form-btn" type="submit" data-form-btn>
+          <ion-icon name="paper-plane"></ion-icon>
+          <span>Send Message</span>
+        </button>
+      </form>
+    </section>
+  </article>
+
+</div>
+</main>
+
+<script>
+const navLinks = document.querySelectorAll("[data-nav-link]");
+const pages = document.querySelectorAll("[data-page]");
+
+navLinks.forEach((link, index) => {
+  link.addEventListener("click", () => {
+    navLinks.forEach(l => l.classList.remove("active"));
+    pages.forEach(p => p.classList.remove("active"));
+
+    link.classList.add("active");
+    const page = pages[index];
+    if (page) page.classList.add("active");
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
+</script>
+
+<script src="./assets/js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
