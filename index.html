@@ -240,6 +240,15 @@ navLinks.forEach((link, index) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
+
+ const sidebar = document.querySelector(".sidebar");
+  const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+
+  if (sidebarBtn && sidebar) {
+    sidebarBtn.addEventListener("click", function() {
+      sidebar.classList.toggle("active");
+    });
+  }
 </script>
 
 <script src="./assets/js/script.js"></script>
